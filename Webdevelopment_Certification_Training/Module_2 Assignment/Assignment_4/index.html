@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+
+    <style>
+        
+    </style>
+    <script>
+        function draw(){
+            var circle = document.getElementById("mycanvas").getContext("2d");
+            circle.arc(200,200,100,0,2*Math.PI);// x,y, radius, start ane, end angke
+            circle.stroke(); 
+            var circle2 = document.getElementById("mycanvas2").getContext("2d");
+            circle2.arc(200, 200, 80, 0, 2 * Math.PI);// x,y, radius, start ane, end angke
+            circle2.stroke(); 
+            
+        }
+       
+        window.onload = draw
+        
+    </script>
+
+     <center>
+
+    <h1>Canvas Circle</h1>
+
+    <figure>
+        <canvas id="mycanvas" height="300px" width="300px"></canvas>
+
+        <figcaption><h3>Fig. circle one </h3></figcaption>
+    </figure>
+
+    <figure>
+
+    <canvas id="mycanvas2" height="300px" width="300px"></canvas>
+
+    <figcaption><h3>Fig. circle two </h3></figcaption>
+</figure>
+
+</center>
+</body>
+</html>
