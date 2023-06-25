@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <style>
+
+        div{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+
+
+<div id="result"></div>
+
+
+    <script>
+        
+
+        function largest_number(){
+            
+        var a,b,c;
+        a = prompt("Enter the First Number");
+        b = prompt("Enter the Second Number");
+        c = prompt("Enter the Third Number");
+        
+        var output = Math.max(a,b,c);
+        var result = document.getElementById("result");
+        result.innerHTML ="The Largest Number Is : " + output;
+
+        }
+
+        largest_number();
+    </script>
+</body>
+</html>

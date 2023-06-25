@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Tilt Prism';
+    src: url("fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf");
+}
+h1{
+    font-family: 'Tilt Prism';
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Tilt Prism';
+    background-color: rgb(29, 237, 14);
+}

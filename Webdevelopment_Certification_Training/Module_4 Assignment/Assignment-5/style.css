@@ -1,0 +1,10 @@
+p{
+    column-count:4 ;  
+    column-gap: 40px;
+    
+    column-rule: 1px dotted red;
+    
+}
+h1{
+    text-align: center;
+}

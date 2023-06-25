@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <style>
+        div{
+            font-size: 25px;
+        }
+    </style>
+
+    <div  id="output"></div>
+    <script>
+        var person = {
+            "Employee_name" : "Karan",
+            "Employee_no"   : 100,
+            "Employee_age"  : 21,
+            "Employee_department" : "Sales"
+        };
+        var output = document.getElementById("output");
+        output.innerHTML = "Employee "+ person.Employee_name + " Is working In " + person.Employee_department + " Department"; 
+        
+
+    </script>
+</body>
+</html>

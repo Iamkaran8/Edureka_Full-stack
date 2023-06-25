@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Condition</title>
+</head>
+<body>
+    <style>
+        div{
+            font-size: 25px;
+        }
+    </style>
+
+    <div id="output"></div>
+
+    <script>
+
+    let name = prompt("Enter Your Name");
+    console.log(name);
+
+    if(name == ""){
+
+        let output = document.getElementById("output");
+        output.innerHTML = "Sorry You Have Not Entered Any Name."
+
+    }else{
+        
+        output.innerHTML = "Hello " + name +"Welcome!. Here " + name + " Is The Entered Name";
+
+    }
+
+    </script>
+</body>
+</html>

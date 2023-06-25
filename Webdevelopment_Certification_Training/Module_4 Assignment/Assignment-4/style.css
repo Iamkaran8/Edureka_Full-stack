@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+.img1 {
+transform: rotateY(30deg);
+
+}
+.img2 {
+    transform: rotateY(180deg);
+}
+#img1{
+    transform: rotateY(180deg);
+}
+#img2{
+    transform: rotateY(30deg);
+}
+.container{
+    column-count: 3;
+    height: 300px;
+}
+.box{
+    column-count: 3;
+}
