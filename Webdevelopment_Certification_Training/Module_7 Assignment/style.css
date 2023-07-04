@@ -1,0 +1,47 @@
+*{
+    font-size: 20px;
+}
+
+#Navbar a{
+    padding: 10px;
+}
+#Navbar a:hover{
+    background-color: #6a6add;
+    border-radius: 10px;
+}
+img{
+    height: 600px;
+    width: 100%;
+}
+.headerone{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+header{
+    padding-top: 78px;
+    
+}
+footer{
+    position: relative;
+    bottom: 0;
+    padding-top: 50px;
+}
+.img{
+    height: 200px;
+    width: auto;
+}
+.course_div h1{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.course_div img{
+    height:100px;
+    width: 190px;
+    padding: 3px;
+    border: 2px solid black;
+}
+#col{
+    padding: 10px;  
+}
