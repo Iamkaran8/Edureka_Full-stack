@@ -1,40 +1,45 @@
 *{
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+
 }
 
 #Navbar a{
     padding: 10px;
 }
-#Navbar a:hover{
-    background-color: #6a6add;
-    border-radius: 10px;
-}
+
 img{
-    height: 600px;
+    height: 700px;
     width: 100%;
 }
 .headerone{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
+    font-size: 30px;
 }
 header{
     padding-top: 78px;
     
 }
-footer{
-    position: relative;
-    bottom: 0;
-    padding-top: 50px;
-}
+
 .img{
-    height: 200px;
+    height: 180px;
     width: auto;
+    padding: 8px;
+    background-color: rgb(175, 175, 180);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0),
+                -1px -1px 5px rgb(8, 8, 8);
+}
+.course_div{
+    padding-bottom: 40px;
 }
 .course_div h1{
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     text-align: center;
+    font-size: 45px;
 }
 .course_div img{
     height:100px;
@@ -44,4 +49,47 @@ footer{
 }
 #col{
     padding: 10px;  
+}
+.h3_header{
+    margin-top:10px ;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.Our_story_image{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+#content_div{
+    padding-top: 30px;
+}
+.carousel-item, img{
+    height: 500px;
+}
+#form_2{
+    padding-top: 100px;
+}
+#form_1{
+    padding-top: 50px;
+}
+
+#myAccordion{
+    padding: 30px;
+}
+#map-container{
+    height: 400px;
+    
+}
+.form{
+    padding-top: 50px;
+}
+.img_h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.img_h4{
+    font-size: 20px;
+}
+.course_div_h1{
+    padding: 0px;
 }
