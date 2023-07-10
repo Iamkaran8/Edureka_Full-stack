@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap-tour/build/css/bootstrap-tour.min.css">
+    <title>Bootstrap tour</title>
+</head>
+<body>
+    <style>
+        div{
+            padding: 50px;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            margin-left: 30%;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+    <h2 class="text-center">Bootstrap Tour </h2>
+    <div id="one"><img src="https://media.istockphoto.com/id/589415708/photo/fresh-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=aBFGUU-98pnoht73co8r2TZIKF3MDtBBu9KSxtxK_C0=" alt=""></div>
+    <div id="two"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIzgVI5UfOqwO74zJ8bGXXxfjLv-9ayjQEZFLMJRFwQ&s" alt=""></div>
+ 
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+
+    <script>
+       var tour = new Tour();
+        tour.addSteps([
+            {
+                element: "#one",
+                placement:'bottom',
+                title:'Fruits',
+                content:"lorem is the sometihing",
+                
+
+            },
+            {
+                element: "#two",
+                placement:'bottom',
+                title:'Vegiees',
+                content:"Protin"
+
+            }
+        ])
+         tour.init()
+         tour.start()
+    </script>
+</body>
+</html>
