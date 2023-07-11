@@ -1,0 +1,35 @@
+@font-face {
+    src: url(Lobster_1.3.otf);
+    font-family: "Lobster";
+}
+#map {
+    margin-top: 100px;
+    margin-left: 22%;
+    height: 500px;
+    width: 900px;
+    padding: 10px;
+    box-shadow: 2px 2px 50px black;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 25px;
+    font-family: "Lobster";
+}
+
+
+img {
+    height: 600px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
