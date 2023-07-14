@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="files/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+    <title>Module_1_assignment</title>
+    <style>
+        body{
+            background-color: rgb(68, 61, 61);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 id="heading">Register Form</h1>
+            <div class="form-group">
+              <label for="name">Enter name</label>
+              <input type="text" name="name" id="" class="form-control" placeholder="Enter your name" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Enter your name with initial</small>
+            </div>
+            <div class="form-group">
+              <label for="pass">Password</label>
+              <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+                <label for="pass">Confirm password</label>
+                <input type="password" class="form-control" name="cnpass" id="cnpass" placeholder="Re-enter password">
+              </div>
+            <center><button type="submit" class="btn">Register</button><br>
+            <a href="#" class="btn">Sign in with google</a>
+            <a href="#" class="btn">Go with Facebook</a></center>
+        </div>
+    </div>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+    //tag selector
+    $('.jumbotron').css({
+        'margin-top':40,
+        'background-color':'#000000',
+        'color':'white'
+    })
+    $('input').css({
+        'width':"95%",
+        'background-color':'#681576',
+        'color':'white'
+    })
+    //attribute selector
+    $('.btn').css({
+        'border-radius':25,
+        'color':"black",
+        "border":"2px solid grey",
+        'background-color':'lightgrey',
+        'margin-top':"20px",
+    })
+
+
+    //attribute selector
+    $('#heading').css({
+        'text-align':'center',
+        'color':'aliceblue',
+        'padding-bottom':50
+    })
+
+});
+    </script>
+</body>
+</html>
