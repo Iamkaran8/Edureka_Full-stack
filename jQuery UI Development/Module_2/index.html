@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+    <title>jQuery</title>
+</head>
+
+<body>
+    <style>
+        #btn {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container">
+        
+        
+        <div class="jumbotron">
+            <form>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" placeholder="Enter Your First Name" class="form-control" id="firstname">
+                </div>
+                <div class="form-group" id="remove1">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" placeholder="ENter Your last Name" class="form-control" id="lastname">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <center>
+            <div id="toggle-bar">
+                <button id="btn" class="btn btn-primary">Click Me!</button>
+                <div id="msg">Click Here To close The Panel</div>
+            </div>
+        </center>
+    </div>
+
+
+ 
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-4/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Here Address, Email , Dob Inserted
+            $('form').append("<div class='form-group'><label for='address'>Address</label><input placeholder='Address'  type='text' class='form-control' id='address'></div>");
+            $('form').append("<div class='form-group'><label for='email'>Email</label><input placeholder='Enter your Email' type='text' class='form-control' id='email'></div>");
+            $('form').append("<div class='form-group'><label for='date'>Date of birth</label><input placeholder='DOB' type='text' class='form-control' id='date'></div>");
+
+            // Last Name Input Field Removed
+            $('#remove1').remove()
+
+            //Type = email & Type =date Changed
+            $('#email').attr('type', 'email');
+            $('#date').attr('type', 'date');
+
+
+            //Slide Bar
+            $('#toggle-bar').before("<h1>Slide Bar</h1>");
+            $('#btn').on('click', function () {
+                $('#msg').toggle("slow")
+            });
+
+            $("#too").tooltip({
+               content: "<strong>Hi!</strong>",
+               track:true
+            });
+        });
+
+    </script>
+</body>
+
+</html>
