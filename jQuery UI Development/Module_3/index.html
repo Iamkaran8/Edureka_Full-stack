@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+    <title>Module_3_assignment</title>
+    <style>
+P{
+  font-size: 20px;
+  color: blueviolet;
+}
+    
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Assignment</h1>
+    <hr>
+    <div class="container">
+        <h3>Lab excersice</h3>
+        <p>Form validation and password hint</p>
+        <div class="jumbotron">
+            <h2>Log in form</h2>
+            <div class="form-group">
+              <label for="name">First name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter first name" aria-describedby="helpId">
+              <small id="helpIdFirstName"></small>
+            </div>
+            <div class="form-group">
+              <label for="lsname">Last name</label>
+              <input type="text" name="lsname" id="lsname" class="form-control" placeholder="Enter last name" aria-describedby="helpId">
+              <small id="helpId"></small>
+            </div>
+            <div class="form-group">
+              <label for="pass">Password</label>
+              <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password">
+            </div>
+            <div class="form-control">
+              <label for="cnpass"></label>
+            </div>
+            <div class="form-group">
+                <label for="cnpass">Conform password</label>
+                <input type="password" class="form-control" name="cnpass" id="cnpass" placeholder="Re-enter password">
+                <small id="passHint"></small>
+              </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">Submit</button>
+            
+        </div>
+    </div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
